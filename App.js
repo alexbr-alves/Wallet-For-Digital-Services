@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import Intro from './src/screens/intro/index';
+import Register2 from './src/screens/register2';
+import WelcomeScrenn from './src/screens/welcomeScreen';
+import Subscription from './src/screens/subscription';
+import HomeSubs from './src/screens/homeSubs'
+import AppRotas from './src/rotas/AppRotas';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <AppRotas/>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
