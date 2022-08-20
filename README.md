@@ -24,4 +24,10 @@
 
 Para usar a aplicação em um simulador, baixe o EXPO GO em sua loja de app e escaneie o QR-Code com a câmera do seu celular 
 
-![photo_2022-08-20_12-05-22](https://user-images.githubusercontent.com/103543739/185753229-4b50b5ae-45cb-445e-a03e-77af5d08363d.jpg)
+
+
+
+<img src="https://user-images.githubusercontent.com/103543739/185753229-4b50b5ae-45cb-445e-a03e-77af5d08363d.jpg" 
+alt="![photo_2022-08-20_12-05-22]" 
+title="QR-CODE para o EXPO GO"
+style="width: 250px; height: 200px">
