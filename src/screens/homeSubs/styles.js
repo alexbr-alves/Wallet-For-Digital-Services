@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"; 
+import { StyleSheet, Platform } from "react-native"; 
 
 export default StyleSheet.create({
     container: {
@@ -156,6 +156,7 @@ export default StyleSheet.create({
     itens: {
         marginHorizontal: 24,
         marginTop: 8,   
+        paddingBottom: 100
     },
     itens__row: {
         flexDirection: 'row',
@@ -168,7 +169,11 @@ export default StyleSheet.create({
         justifyContent: 'space-between'
     },
     itens__icon: {
-        marginLeft: 12
+        marginLeft: 12,
+        height: 40,
+        width: 40,
+
+       
     },
     itens__name: {
         marginLeft: 12,
@@ -177,12 +182,14 @@ export default StyleSheet.create({
         fontSize: 14,
         lineHeight: 20, 
        
+       
     },
     itens__value: {
        marginRight: 17,
        fontWeight: '600',
        fontSize: 14,
        lineHeight: 20,
-       color: '#ffffff'
-    }
+       color: '#ffffff',
+       
+    },
 }) 

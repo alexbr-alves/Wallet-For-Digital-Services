@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, Image,  TouchableOpacity } from "react-native";
+import { View, Text, Image,  TouchableOpacity , ScrollView} from "react-native";
 import styles from './styles'
 
 import IconSettings from "../../../assets/homeSub/settings.png";
@@ -13,8 +13,11 @@ import OneDrive from '../../../assets/homeSub/OneDriveLogo.png'
 import Spotify from '../../../assets/homeSub/SpotifyLogo.png'
 import YouTube from '../../../assets/homeSub/yTLgoo.png'
 import date from '../../../assets/homeSub/date.png'
+import iconNF from '../../../assets/subscription/netflix.png'
 import { useNavigation } from "@react-navigation/native";
 
+
+import iconHbo from '../../../assets/subscription/hbo.png'
 
 export default function HomeSubs(){
     const [screenL, setScreenL] = useState(true)
@@ -22,7 +25,7 @@ export default function HomeSubs(){
     const navigation = useNavigation()
    
     return(
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.areaSuperior} >
                     <TouchableOpacity style={{marginRight: 23}}>
                         <Image style={styles.iconSettings} source={IconSettings}/>
@@ -101,7 +104,32 @@ export default function HomeSubs(){
                     </View>
                     <Text style={styles.itens__value}>$29.99</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity style={styles.itens__row} onPress={() => {navigation.navigate('SubsInfo', {
+                    logo: OneDrive, name: 'Microsoft OneDriv',price: '$29.99', description: 'Cloud storage', category: 'Cloud Service', 
+                    firstPay: '08.01.2022', reminder: 'Never', currency: 'USD($)'
+
+                })}}>
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <Image source={screenL === true? iconHbo : date} style={styles.itens__icon}/>
+                    <Text style={styles.itens__name}> HBO GO</Text>
+                    </View>
+                    <Text style={styles.itens__value}>$14.99</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.itens__row} onPress={() => {navigation.navigate('SubsInfo', {
+                    logo: OneDrive, name: 'Microsoft OneDriv',price: '$29.99', description: 'Cloud storage', category: 'Cloud Service', 
+                    firstPay: '08.01.2022', reminder: 'Never', currency: 'USD($)'
+
+                })}}>
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <Image source={screenL === true? iconNF : date} style={styles.itens__icon}/>
+                    <Text style={styles.itens__name}> Netflix</Text>
+                    </View>
+                    <Text style={styles.itens__value}>$24.99</Text>
+                </TouchableOpacity>
             </View>
-        </View>
+            
+        </ScrollView>
     )
 }

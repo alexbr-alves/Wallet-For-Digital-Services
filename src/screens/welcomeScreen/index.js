@@ -16,7 +16,7 @@ export default function WelcomeScrenn(){
     return(
         <ImageBackground source={fundo} resizeMode={'cover'} style={styles.container}>
          <Image style={styles.logo} source={logo}/>
-         <Text style={styles.texto}>Congue malesuada in ac justo, a tristique leo massa. Arcu leo leo urna risus.</Text>
+         <Text style={styles.texto}>Think of some really nice motivational quote, because I'm out of ideas.</Text>
          <TouchableOpacity onPress={() => {navigation.navigate('Intro')}} 
          style={{alignItems: 'center'}}>
             <Image style={styles.button1} source={buttonGet}/>

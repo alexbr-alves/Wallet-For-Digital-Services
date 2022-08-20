@@ -83,6 +83,7 @@ export default StyleSheet.create({
 
     buttomGet: {
         marginTop: 20,
+        alignSelf: 'center'
     },
 
     botaoSignUn: {
