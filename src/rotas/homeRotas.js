@@ -5,9 +5,11 @@ import { useNavigation } from '@react-navigation/native';
 import { Image, View, Text, TouchableOpacity, Platform } from 'react-native';
 import Ionic from 'react-native-vector-icons/Ionicons';
 
-import Home from '../screens/home';
+import HomeSubs from '../screens/homeSubs';
+import Calender from '../screens/calender';
 import Subscription from '../screens/subscription'
 import Cards from '../screens/cards';
+import Budgets from '../screens/budgets'
 import add from '../../assets/add.png'
 
 const Tab = createBottomTabNavigator();
@@ -31,17 +33,21 @@ export default function HomeRotas() {
       })}
         
       >
-        <Tab.Screen name="Home" component={Home}  options={{title: '' , tabBarIcon: ({size, color }) => (
+        <Tab.Screen name="Home" component={HomeSubs}  options={{title: '' , tabBarIcon: ({size, color }) => (
           <Ionic name='home-outline' size={size} color={color}/>
         ), tabBarIconStyle: {marginTop: 10}}}/>
 
-        
+        <Tab.Screen name="Budgets" component={Budgets} options={{title: '', tabBarIcon: ({size, color }) => (
+          <Ionic name='apps-outline' size={size} color={color}/>
+        ), tabBarIconStyle: {marginTop: 10}}}/>
 
         <Tab.Screen name="Subscription" component={Subscription}  options={{title: '', tabBarStyle: {display: 'none'}, tabBarIcon: ({size, color }) => (
          <ButtomAdd />
         )}}/>
         
-      
+        <Tab.Screen name="Calender" component={Calender} options={{title: '', tabBarIcon: ({size, color }) => (
+          <Ionic name='calendar-outline' size={size} color={color}/>
+        ), tabBarIconStyle: {marginTop: 10} }}/>
 
         <Tab.Screen name="Cards" component={Cards} options={{title: '', tabBarIcon: ({size, color }) => (
           <Ionic name='card-outline' size={size} color={color}/>
