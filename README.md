@@ -1,5 +1,17 @@
 # Wallete-for-Digital-Services
- 
+
+<br>
+<br>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103543739/201148544-c2b1a784-6bb5-4d7c-a5e5-43c21815746b.png">
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103543739/201150833-50509f53-1cbc-4328-9a6f-c495725190a8.png">
+</p>
+
+
+
  
  Trackizer é um app baseado em um modelo Figma público. 
  
@@ -22,12 +34,8 @@
 [Untitled_ Aug 20, 2022 11_53 AM.webm](https://user-images.githubusercontent.com/103543739/185752909-a119473d-a213-4de0-9422-d84532b0c483.webm)
 
 
-Para usar a aplicação em um simulador, baixe o EXPO GO em sua loja de app e escaneie o QR-Code com a câmera do seu celular 
 
+<h2>Demostrações complementares</h2>
 
+![modelo 3 telas (1)](https://user-images.githubusercontent.com/103543739/201149934-591857ee-680b-45f0-83c2-665bdf6d77ad.png)
 
-
-<img src="https://user-images.githubusercontent.com/103543739/185753229-4b50b5ae-45cb-445e-a03e-77af5d08363d.jpg" 
-alt="![photo_2022-08-20_12-05-22]" 
-title="QR-CODE para o EXPO GO"
-style="width: 250px; height: 200px">
